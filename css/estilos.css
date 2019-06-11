@@ -1,0 +1,566 @@
+/*------ fuente titulo ------*/
+@font-face {
+    font-family:"Raleway";
+    src: url(../fuentes/Raleway-Regular.ttf);
+}
+
+/*------ fuente cuerpo ------*/
+@font-face {
+    font-family:"Catamaran";
+    src: url(../fuentes/Catamaran-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Catamaran";
+    font-weight:bold;
+    src: url(../fuentes/Catamaran-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    margin: 0;
+}
+
+/*-------------------estilos base----------------------------------------*/
+img {
+    display:block;
+    width: 100%;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap; /*para que los elementos que no entren se vayan hacia abajo*/
+    justify-content: space-between; /*alinear en el eje horizontal*/
+    align-items: center; /*alinear en el eje vertical*/
+}
+
+.column {
+    width: 100%;
+}
+
+/*-------------------estilos header----------------------------------------*/
+.main-header {
+    width: 100%;
+}
+
+.column-logo-50 {
+    width: 49.5%;
+}
+
+.imglogo {
+    width: 55%;
+    margin: 2px auto;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #DE423A;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 0; /*reduce el grosos de la letra*/
+}
+
+.main-header__contactInfo__phone {
+    background: #0B0B3B;
+    color: white;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.main-header__contactInfo__addres {
+    padding: 3px;
+    margin: 0 auto;
+
+}
+
+.main-header__search {
+    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+
+    color: white;
+    padding: 3px;
+}
+
+/*para que el icono de telefono y ubicacion se separen del texto*/
+.main-header [class*="icon-"]:before { /*en la clase main-header selecciono todas las clases que tengan icon- */
+    position: relative;
+    top: 2px;
+    /*right: 3px;*/
+}
+
+/*-------------------estilos menu----------------------------------------*/
+.main-nav {
+    width: 100%;
+    background: #0B0B3B;
+    position: relative;
+    z-index: 20000;
+    padding: 10px;
+}
+
+.icon-menu {
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.social-icon { /* ubicacion de los iconos de las redes sociales*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+
+.social-icon__link {
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 50%;
+    background: rgba(11, 11, 59, 0.5);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0; /*para que el menu se oculte y aparezca al dar click se aplican estos estilos y se usa JS para programar el menu*/
+    overflow: hidden; /*_________|*/
+    transition: height .3s linear;/*para animar cuando hay algun cambio de propiedad, va de la mano con la funcion mostrar de JS, clase .mostrar y las dos propiedades anteriores*/
+}
+
+.mostrar{
+    height: 408px;/*esta altura no puede ser auto, si no el menu no se muestra con animacion de transition solo aparece y desaparece*/
+}
+
+.menu__link {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    /*background: #0B0B3B;*/
+    background: rgba(11, 11, 59, 0.80);
+}
+
+.menu__link:hover {
+    /*background: #DE423A;*/
+    border-radius: 8px;
+    color: black;
+    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+}
+
+.menu__link--select {
+    /*background: #DE423A;*/
+    border-radius: 12px;
+    color: black;
+    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+}
+
+/*-------------------estilos del banner----------------------------------------*/
+.banner {
+    margin-top: -55px;
+    position: relative;/*el banner siempre debe llevar esta propiedad*/
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner__img { /* modifico la imagen en tamaño de alto y con object-fit genero que la imagen se muestre bien y desde el centro*/
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.banner__content {
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* me centra el texto que esta con position: absolute dentro del banner*/
+    font-size:  1.5em;
+    font-weight: bold;
+}
+
+/*-------------------estilos principales----------------------------------------*/
+.group--color .container {
+   /* background: #DE423A;*/
+    background: #0B0B3B;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.main__txt {
+    padding: 5px;
+}
+
+.column__title {
+    font-size: 1.3em;
+}
+
+.main__about__description .column:nth-child(2){ /* con nth-child(2) selecciona la segunda clase .column de la clase .main__about__description ya que en esta hay dos contenedores con la clase column*/
+    padding: 10px;
+}
+
+.btn { /*modifica y centra el boton de contact*/
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    /*background: #DE423A;*/
+    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.group__title{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+
+.today-special .column {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.img-titulos {
+    margin: auto;
+    max-width: 350px;
+}
+
+.title-img {
+    font-size: 1.4em;
+    color: #DE423A;
+    font-weight: bold;
+}
+
+/*-------------------estilos footer----------------------------------------*/
+
+.main--footer {
+    background: #222;
+    color: white;
+    padding:  10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main--footer .container--flex {
+    text-align:center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main--footer [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+}
+
+.main--footer [class*="icon-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/*-------------------estilos responsive----------------------------------------*/
+
+@media screen and (min-width:480px) {
+    .imglogo {
+        width: 85%;
+    }
+    
+    .logo {
+        color: white;
+        text-align: center;
+    }
+    
+    .main-header__contactInfo {
+        text-align: right;
+    }
+    
+    .main-header__contactInfo__phone {
+        background: none;
+    }
+    
+    .main-header__contactInfo__addres {
+        color: white;
+    }
+    
+    .main-header__search {
+        background: none;
+    }
+    
+    .main-nav {
+       /* background: rgba(0,0,0,0.85);*/
+        background: #0B0B3B;
+    }
+    
+    .main-footer .container--flex {
+        align-items: flex-start;
+    }
+    
+    .column--50 {
+        width: 48%
+    }
+    
+    .banner {
+        margin-top: -195px;
+        z-index: -1000;
+    }
+    
+    .column--50-25 {
+        width: 48%;
+    }
+    
+    .column--33 {
+    width: 32%;
+    }
+    
+    .main__about__description .column:nth-child(2){
+        padding: 20px;
+        font-size: .9em;
+    }
+    
+    .main__about__description .btn {
+        margin: 0;
+    }
+    
+    .today-special .column {
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    
+    .img-titulos {
+        height: 210px;
+        object-fit:contain; /*para que la imagen no se deforme al darle un tamaño como height y sigan centradas*/
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width:692px) {
+    .imglogo {
+        width: 57%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .menu {
+        width: 35%;
+    }
+    
+    .main__title {
+        font-size: 2.2em;
+    }
+    
+    .main__about__description {
+        margin-top: 30px;
+    }
+    
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+    
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 40px;
+        text-align:justify;
+    }
+
+    .column--50-25 {
+        width: 24.9%;
+    }
+    
+    .column__title {
+        font-size: 1em;
+    }
+    
+    .group__title {
+        font-size: 2.2em;
+    }
+    
+    .main__about__description .column:nth-child(1) img {
+        width: 100%;
+        height: 350px;
+        object-fit: contain; /*para que la imagen no se deforme*/
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    .container {
+        width: 1004px;
+    }
+    
+    .imglogo {
+        width: 45%;
+    }
+    
+    .logo {
+        font-size: 2em;
+        padding: 0;
+    }
+    
+    .main-header__contactInfo__phone, .main-header__contactInfo__addres {
+        padding-right: 0.3em;
+        font-size: 1em;
+    }
+    
+    .main-nav {
+        padding: 0;
+    }
+    
+    .banner__content {
+        font-size: 1.8em
+    }
+    
+    /*Para que el icono de menu se borre y se muestre bien el menu*/
+        .icon-menu {
+        display: none;
+    }
+    
+    /*Para que el menu se muestre normal y no dsea desplegable desde el icono*/
+    .menu {
+        position: static;
+        display: flex;
+        height: 50px;;
+        width: auto;
+    }
+    
+    .menu__link {
+        padding: 11px;
+    }
+    
+    .group--color .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    
+    .main__title {
+        font-size: 2.3em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 50px;
+    }
+    
+    .title-img {
+        font-size: 1.1em;
+    }
+    
+    .column--33 {
+      text-align: justify;
+    }
+    
+    .column__txt {
+        margin: 5px
+    }
+    .main__about__description .column:nth-child(1) img {
+        height: 300px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .container {
+        width: 1400px;
+    }
+    
+    .imglogo {
+        width: 43%;
+    }
+    
+    .social-icon { /* ubicacion de los iconos de las redes sociales*/
+        display: flex;
+    }
+    
+    .main__about__description .column:nth-child(1) img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+    }
+    
+    .img-titulos {
+        height: 250px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

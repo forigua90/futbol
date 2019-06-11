@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"> <!-- Adapatacion Responsive para todo tipo de pantalla !-->    
+    <title>R&R FC</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/IMG-20190326-WA0003.ico">
+    
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Conexion CSS !-->
+    
+    <!-- para los iconos !-->  
+    <link rel="stylesheet" href="icons/styles.css"> 
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="container--flex column--50">
+                <div class="column-logo-50">
+                    <img class="imglogo" src="imagenes/LOGO.png" alt="Ricardo Rozo FC">
+                </div>
+                <div class="column-logo-50">
+                    <h1 class="logo">R & R FC</h1>
+                </div>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone1"> NUMERO DE SEDE</span>
+                </p>
+                <p class="main-header__contactInfo__addres">
+                    <span class="icon-location-1"> DIRECCION SEDE, Bogotá</span>
+                </p>
+                <p class="main-header__search">
+                   <span>
+                    <!--<label class="searh"><b>Busqueda: </b></label>!-->
+            	    <input class="searhtxt" id="buscartext" type="text" onkeyup="busqueda()" placeholder="&#128270;">
+                   </span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/" class="menu__link menu__link--select">inicio</a></li>
+                <li class="menu__item"><a href="/" class="menu__link">Noticias</a></li>
+                <li class="menu__item"><a href="/" class="menu__link">Fútbol Femenino</a></li>
+                <li class="menu__item"><a href="/" class="menu__link">Fútbol Masculino</a></li>
+                <li class="menu__item"><a href="/" class="menu__link">Club</a></li>
+                <li class="menu__item"><a href="/" class="menu__link">Tienda</a></li>
+                <li class="menu__item"><a href="/" class="menu__link">Patrocinadores</a></li>
+                <li class="menu__item"><a href="/" class="menu__link">Medios de Pago</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="/*********/" target="_blank" class="social-icon__link"><span class="icon-facebook2"></span></a>
+                <a href="/*********/" target="_blank" class="social-icon__link"><span class="icon-twitter2"></span></a>
+                <a href="/*********/" target="_blank" class="social-icon__link"><span class="icon-youtube2"></span></a>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <img src="/*********/" alt="" class="banner__img">
+        <div class="banner__content">titulo secundario principal</div>
+    </section>
+    <!-- MITAD DE LA PAGUINA !-->
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">subtitulo</h2>
+                <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non numquam libero, nisi deleniti molestiae? Explicabo nesciunt architecto, dolore repudiandae error consequatur voluptate ea. A tempora asperiores neque similique sed natus.</p>
+            </div>
+        </section>
+        <section class="group main__about__description">
+            <div class="container container--flex">
+                <div class="column column--50">
+                    <img src="../imgfiscalia/flecha.png" alt="">
+                </div>
+                <div class="column column--50">
+                    <h3 class="column__title">ALGUN TITULO ACA SE PONE</h3>
+                    <p class="column__txt">|Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laudantium optio, nostrum corporis obcaecati suscipit officia beatae culpa dolorum, aut aliquid, voluptatem sunt modi nisi. Veritatis, quo atque doloribus provident.</p>
+                    <a href="" class="btn btn--contact">Contact</a>
+                </div>
+            </div>
+        </section>
+        <section class="group today-special">
+            <h2 class="group__title">TITULOS</h2>
+            <div class="container container--flex">
+                <div class="column column--50-25">
+                    <img src="../imgfiscalia/logo2.png" alt="" class="today-special__img">
+                    <div class="today--special__title">TITULO DE LA IMAGEN</div>
+                    <div class="today-special__price">$99</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="../imgfiscalia/logo2.png" alt="" class="today-special__img">
+                    <div class="today--special__title">TITULO DE LA IMAGEN</div>
+                    <div class="today-special__price">$99</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="../imgfiscalia/logo2.png" alt="" class="today-special__img">
+                    <div class="today--special__title">TITULO DE LA IMAGEN</div>
+                    <div class="today-special__price">$99</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="../imgfiscalia/logo2.png" alt="" class="today-special__img">
+                    <div class="today--special__title">TITULO DE LA IMAGEN</div>
+                    <div class="today-special__price">$99</div>
+                </div>
+            </div>
+        </section>   
+    </main>
+       
+    <footer class="main--footer">
+            <div class="container container--flex">
+                <div class="column column--33">
+                    <h2 class="column__title">Por que visitarnos</h2>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quo, dolor cupiditate voluptatum quod possimus molestiae ea at, labore id modi iste facilis totam tempore nemo quia eveniet porro deserunt.</p>
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">Contáctanos</h2>
+                    <p class="column__txt">direccion</p>
+                    <p class="column__txt">telefono</p>
+                    <p class="column__txt">correo</p>
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">redes sociales</h2>
+                    <p class="column__txt"><a href="/*********/" class="icon-facebook2">Facebook</a></p>
+                    <p class="column__txt"><a href="/*********/" class="icon-twitter2">Síguenos en Twitter</a></p>
+                    <p class="column__txt"><a href="/*********/" class="icon-youtube2">Síguenos en YouTube</a></p>
+                </div>
+                <p class="copy">F T Y I M  |  ALGUN TEXTO</p>
+            </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>

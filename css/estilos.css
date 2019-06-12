@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.5);
     z-index: 1000;
     top: 0;
 }
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 .banner__img { /* modifico la imagen en tamaño de alto y con object-fit genero que la imagen se muestre bien y desde el centro*/
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 .banner__content {
@@ -361,19 +361,19 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .banner__img {
-    height: 270px;
+        height: 270px;
     }
 
     .banner__content {
         top: 87%;
     }
     
-    .main-footer .container--flex {
-        align-items: flex-start;
+    .column--30 {
+        width: 28%
     }
     
-    .column--50 {
-        width: 48%
+    .column--70 {
+        width: 68%
     }
     
     .banner {

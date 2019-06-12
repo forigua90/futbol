@@ -61,42 +61,46 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-.column-logo-50 {
-    width: 49.5%;
-}
-
 .imglogo {
-    width: 55%;
-    margin: 2px auto;
+    display: none;
+    margin: auto;
 }
 
-.logo {
+.imgname {
+    display: block;
+    width: 150%;
+    margin: auto;
+}
+
+/*.logo {
     font-size: 1.8em;
     color: #DE423A;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
     font-weight: 0; /*reduce el grosos de la letra*/
-}
+/*}*/
 
 .main-header__contactInfo__phone {
     background: #0B0B3B;
     color: white;
     margin: 0 auto;
-    padding: 3px;
+    font-weight: 0; /*reduce el grosos de la letra*/
+    text-align: center;
 }
 
 .main-header__contactInfo__addres {
     padding: 3px;
     margin: 0 auto;
-
+    font-weight: 0;
+    text-align: center;
 }
 
-.main-header__search {
+/*.main-header__search {
     background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
 
     color: white;
     padding: 3px;
-}
+}*/
 
 /*para que el icono de telefono y ubicacion se separen del texto*/
 .main-header [class*="icon-"]:before { /*en la clase main-header selecciono todas las clases que tengan icon- */
@@ -274,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 30px;
 }
 
-.today-special .column {
+.img-special .column {
     margin-bottom: 30px;
     text-align: center;
 }
@@ -328,16 +332,21 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width:480px) {
     .imglogo {
-        width: 85%;
+        display: block;
+        width: 50%;
     }
     
-    .logo {
+    .imgname {
+        width: 50%;
+    }
+    
+   /* .logo {
         color: white;
         text-align: center;
-    }
+    }*/
     
     .main-header__contactInfo {
-        text-align: right;
+        text-align: center;
     }
     
     .main-header__contactInfo__phone {
@@ -346,10 +355,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .main-header__contactInfo__addres {
         color: white;
-    }
-    
-    .main-header__search {
-        background: none;
     }
     
     .main-nav {
@@ -387,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0;
     }
     
-    .today-special .column {
+    .img-special .column {
         border: 5px solid #ddd;
         padding: 5px;
     }
@@ -401,7 +406,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width:692px) {
     .imglogo {
-        width: 57%;
+        width: 20%;
+    }
+    
+    .imgname {
+        width: 35%;
     }
 }
 
@@ -527,7 +536,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .imglogo {
-        width: 43%;
+        width: 32%;
     }
     
     .social-icon { /* ubicacion de los iconos de las redes sociales*/

@@ -1,0 +1,1 @@
+dimensiones:  1100 *460

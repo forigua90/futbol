@@ -441,11 +441,20 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 30px;
     }
     
-    .main__about__description .column--50:nth-child(2) {
+    .main__about__description .column--30:nth-child(2) {
         font-size: 1em;
     }
     
-    .main__about__description .column--50:nth-child(2) .column__txt {
+    .main__about__description .column--30:nth-child(2) .column__txt {
+        line-height: 40px;
+        text-align:justify;
+    }
+    
+    .main__about__description .column--70:nth-child(2) {
+        font-size: 1em;
+    }
+    
+    .main__about__description .column--70:nth-child(2) .column__txt {
         line-height: 40px;
         text-align:justify;
     }

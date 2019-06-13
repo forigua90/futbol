@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #0B0B3B;
     color: white;
     margin: auto;
-    font-weight: 0; /*reduce el grosos de la letra*/
+     /*reduce el grosos de la letra*/
     text-align: center;
 }
 
@@ -83,6 +83,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     font-weight: 0;
     text-align: center;
+    color: black;
+}
+
+.infoContact-phone {
+    color: white;
+}
+
+.infoContact-location {
+    color: black;
 }
 
 .infoContact-phone:visited {
@@ -95,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-header [class*="infoContact-"] {
     text-decoration: none;
+    font-size: 13px;
 }
 
 .main-header [class*="infoContact-"]:hover {
@@ -256,7 +266,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main__about__description .column:nth-child(2){ /* con nth-child(2) selecciona la segunda clase .column de la clase .main__about__description ya que en esta hay dos contenedores con la clase column*/
-    padding: 10px;
+    padding: 5px;
+}
+
+.column--30 {
+    width: 75%;
+    margin: auto;
 }
 
 .btn { /*modifica y centra el boton de contact*/
@@ -274,9 +289,8 @@ h1, h2, h3, h4, h5, h6 {
 .group__title{
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-weight: 100;
     font-size: 1.8em;
-    margin: 30px;
+    margin: 25px;
 }
 
 .img-special .column {
@@ -351,6 +365,14 @@ h1, h2, h3, h4, h5, h6 {
         text-align: left;
     }
     
+    
+    .main-header [class*="infoContact-"] {
+        color: white;
+    }
+    /*.infoContact-location {
+    color: white;
+    }*/
+    
     .infoContact-location:visited {
         color:white;
     }
@@ -394,9 +416,14 @@ h1, h2, h3, h4, h5, h6 {
         font-size: .9em;
     }
     
-    .main__about__description .btn {
-        margin: 0;
+    .group__title{
+        margin-top: 5px;
+        margin-bottom: 30px;
     }
+    
+    /*.main__about__description .btn {
+        margin: 0;
+    }*/
     
     .img-special .column {
         border: 5px solid #ddd;
@@ -422,6 +449,14 @@ h1, h2, h3, h4, h5, h6 {
     .main-header__contactInfo__addres {
         text-align: right;
     }
+    
+    .main-header [class*="infoContact-"] {
+        font-size: 17px;
+    }
+    
+    .column--30 {
+        width: 18%
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -437,15 +472,26 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2.2em;
     }
     
-    .main__about__description {
+    /*.main__about__description {
         margin-top: 30px;
-    }
+    }*/
     
-    .main__about__description .column--30:nth-child(2) {
+    /*.main__about__description .column--30:nth-child(2) {
         font-size: 1em;
+        
+    }*/
+    
+    /*.main__about__description .column--30:nth-child(2) .column__txt {
+        line-height: 40px;
+        text-align:justify;
+    }*/
+    
+    .group__title{
+        margin-top: 0px;
+        margin-bottom: 30px;
     }
     
-    .main__about__description .column--30:nth-child(2) .column__txt {
+    .column__txt {
         line-height: 40px;
         text-align:justify;
     }
@@ -455,7 +501,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .main__about__description .column--70:nth-child(2) .column__txt {
-        line-height: 40px;
+        line-height: 50px;
         text-align:justify;
     }
 

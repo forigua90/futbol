@@ -469,7 +469,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .main__title {
-        font-size: 2.2em;
+        font-size: 2em;
     }
     
     /*.main__about__description {
@@ -575,9 +575,6 @@ h1, h2, h3, h4, h5, h6 {
         padding: 20px;
     }
     
-    .main__title {
-        font-size: 2.3em;
-    }
     .main__about__description .column--50:nth-child(2) .column__txt {
         line-height: 50px;
     }

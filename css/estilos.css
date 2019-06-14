@@ -343,6 +343,42 @@ h1, h2, h3, h4, h5, h6 {
     right: 5px;
 }
 
+/*-------------------estilos contenido----------------------------------------*/
+
+.column--30-q {
+    width: 100%;
+    margin-top: 2px;
+    border-style: groove;
+    border-color:azure;
+    
+}
+
+.column--70-q {
+    width: 100%;
+    margin-bottom: 1px;
+    padding: 5px;
+    border-style: groove;
+    border-color:azure;
+}
+
+.column--30-v {
+    display: none;
+}
+
+.column--70-n {
+    display: none;
+}
+
+.text__title {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.text__txt {
+    text-align: justify;
+}
+
+
 /*-------------------estilos responsive----------------------------------------*/
 
 @media screen and (min-width:480px) {
@@ -594,6 +630,71 @@ h1, h2, h3, h4, h5, h6 {
         height: 300px;
         object-fit: contain;
     }
+    
+    /*--------club------------*/
+    
+    .container--general {
+        border-style: groove;
+        border-color:rgba(240, 240, 178, 0.3);
+        background: rgba(251, 191, 0, 0.1);
+        margin: 5px;
+    }
+    
+    .column--30-q {
+        margin-top: 2px;
+        border-style: none;
+    }
+    
+    .column--70-q {
+        border-style: none;
+        margin-bottom: 2px;
+    }
+    
+    .column--30-t {
+        float: left;
+        width: 26%;
+    }
+    
+    .column--30-v {
+        float: right;
+        width: 73%;
+        display:block;
+    }
+    
+    .column--70-v {
+       float: left;
+        width: 26%;
+    }
+    
+    .column--70-t {
+        float: right;
+        width: 73%;
+        display:block;
+    }
+    
+    .column--30-a {
+        float: right;
+        width: 26%; 
+    }
+    
+    .column--30-n {
+        float: left;
+        width: 73%;
+        display:block;
+    }
+    
+    .column--70-k {
+        float: left;
+        width: 73%;
+        display:block;
+    }
+    
+    .column--70-n {
+        float: right;
+        width: 26%;
+    }
+    
+    
 }
 
 @media screen and (min-width:1500px) {

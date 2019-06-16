@@ -166,9 +166,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu {
     position: absolute;
-    top: 56px;
+    top: 55px;
     left: 0;
-    width: 50%;
+    width: 90%;
     background: rgba(11, 11, 59, 0.5);
     padding: 0;
     margin: 0;
@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mostrar{
-    height: 408px;/*esta altura no puede ser auto, si no el menu no se muestra con animacion de transition solo aparece y desaparece*/
+    height: 357px;/*esta altura no puede ser auto, si no el menu no se muestra con animacion de transition solo aparece y desaparece*/
 }
 
 .menu__link {
@@ -286,11 +286,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px auto;
 }
 
-.group__title{
+.group__title, .group__title-o{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 1.8em;
     margin: 25px;
+}
+
+.group__title-o {
+    margin-top: 25px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .img-special .column {
@@ -359,6 +365,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px;
     border-style: groove;
     border-color:azure;
+    background: rgba(251, 191, 0, 0.1);
 }
 
 .column--30-v {
@@ -376,6 +383,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .text__txt {
     text-align: justify;
+}
+
+/* Control del iframe (mapas) para que sea responsivo */
+.maps {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.maps iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -418,6 +440,10 @@ h1, h2, h3, h4, h5, h6 {
         background: #0B0B3B;
     }
     
+    .menu {
+        width: 50%;
+    }
+    
     .banner__img {
         height: 270px;
     }
@@ -452,7 +478,12 @@ h1, h2, h3, h4, h5, h6 {
         font-size: .9em;
     }
     
-    .group__title{
+    .group__title-o {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .group__title {
         margin-top: 5px;
         margin-bottom: 30px;
     }
@@ -549,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1em;
     }
     
-    .group__title {
+    .group__title, .group__title-o {
         font-size: 2.2em;
     }
     
@@ -646,6 +677,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .column--70-q {
+        background:none;
         border-style: none;
         margin-bottom: 2px;
     }

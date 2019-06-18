@@ -274,17 +274,22 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
-.btn { /*modifica y centra el boton de contact*/
-    display: block;
+.column--100 {
+    width: 100%;
+    margin: 15px 0;
+}
+
+/*.btn { /*modifica y centra el boton de contact*/
+/*    display: block;
     text-align: center;
     text-decoration: none;
     width: 120px;
     /*background: #DE423A;*/
-    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+/*    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
     color: white;
     padding: 10px;
     margin: 10px auto;
-}
+}*/
 
 .group__title, .group__title-o{
     font-family: 'Raleway', sans-serif;
@@ -523,6 +528,11 @@ h1, h2, h3, h4, h5, h6 {
     
     .column--30 {
         width: 18%
+    }
+    
+    .info-img {
+        width: 10%;
+
     }
 }
 

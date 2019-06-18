@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*-------------------estilos principales----------------------------------------*/
-.group--color .container {
+.group--color .container, .img-en {
    /* background: #DE423A;*/
     background: #0B0B3B;
     color: white;
@@ -277,6 +277,19 @@ h1, h2, h3, h4, h5, h6 {
 .column--100 {
     width: 100%;
     margin: 15px 0;
+}
+
+.img-en{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.info-img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 /*.btn { /*modifica y centra el boton de contact*/
@@ -507,6 +520,14 @@ h1, h2, h3, h4, h5, h6 {
         object-fit:contain; /*para que la imagen no se deforme al darle un tamaño como height y sigan centradas*/
         padding: 5px;
     }
+    
+    .img-en{
+        margin-top: 25px;
+    }
+    
+    .info-img {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width:692px) {
@@ -529,10 +550,8 @@ h1, h2, h3, h4, h5, h6 {
     .column--30 {
         width: 18%
     }
-    
     .info-img {
-        width: 10%;
-
+        width: 55%;
     }
 }
 
@@ -598,6 +617,10 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         height: 350px;
         object-fit: contain; /*para que la imagen no se deforme*/
+    }
+    
+    .info-img {
+        width: 50%;
     }
 }
 
@@ -672,6 +695,10 @@ h1, h2, h3, h4, h5, h6 {
         object-fit: contain;
     }
     
+    .info-img {
+        width: 45%;
+    }
+    
     /*--------club------------*/
     
     .container--general {
@@ -734,9 +761,7 @@ h1, h2, h3, h4, h5, h6 {
     .column--70-n {
         float: right;
         width: 26%;
-    }
-    
-    
+    } 
 }
 
 @media screen and (min-width:1500px) {
@@ -760,6 +785,10 @@ h1, h2, h3, h4, h5, h6 {
     
     .img-titulos {
         height: 250px;
+    }
+    
+    .info-img {
+        width: 35%;
     }
     
 }

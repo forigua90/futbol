@@ -41,9 +41,9 @@
         <!-- OPCIONES MENU !-->
             <span class="icon-menu" id="btnmenu"></span>
             <ul class="menu" id="menu">
-                <li class="menu__item"><a href="index.html" class="menu__link menu__link--select">Inicio</a></li>
+                <li class="menu__item"><a href="index.html" class="menu__link ">Inicio</a></li>
                 <li class="menu__item"><a href="club.html" class="menu__link">Club</a></li>
-                <li class="menu__item"><a href="encuentranos.html" class="menu__link">Sedes</a></li>
+                <li class="menu__item "><a href="encuentranos.html" class="menu__link menu__link--select">Sedes</a></li>
                 <li class="menu__item"><a href="/" class="menu__link">En Vivo</a></li>
                 <li class="menu__item"><a href="femenino.html" class="menu__link">Fútbol Femenino</a></li>
                 <li class="menu__item"><a href="masculino.html" class="menu__link">Fútbol Masculino</a></li>
@@ -120,12 +120,58 @@
                         </div>
                     </div>
                 </div>
-            <div class="column column--100">
-            <!-- PENDON !-->         
-                <img class="info-img" src="imagenes/PENDONv2.png">        
+            <!-- CONTACTANOS !-->
+            <div class="container container--flex"> 
+                <div class="img-en">
+                        <h3 class="text__title">ENCUENTRANOS</h3>  
+                    </div>
+                <div class="info-img">
+                    <img src="imagenes/PENDONv2.png">        
+                </div>
             </div>
+            </div>
+        </section>
+        <!-- FORM CONTACTAR !-->
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">CONTÁCTANOS:</h2>   
             </div>
         </section> 
+        <section>
+            <div>
+                <div>
+                   <form action="" method="post" name="formulario">
+                    <div>
+                        <label for="n1">NOMBRE</label>
+                    </div>
+                    <div>
+                    <input type="text" id="n1" name="nombres" required pattern="[A-Za-z]{4,50}" title="Solo Letras. Tamaño minimo de 4 digitos">
+                    </div>
+                    <div>
+                        TELÉFONO
+                    </div>
+                    <div>
+                    <input type="text" name="telefono" required pattern="[0-9]{7,10}" title="Solo Números. Tamaño minimo de 7 digitos">
+                    </div>
+                    <div>
+                        CORREO
+                    </div>
+                    <div>
+                    <input type="email" name="email" required title="Digite de forma correcta el correo">
+                    </div>
+                    <div>
+                        <label for="msj">Déjanos tu mensaje</label>
+                    </div>
+                    <div>
+                    <textarea name="mensaje" id="msj" cols="55" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 <!-- FIN CONTENIDO PAGINA !-->
     

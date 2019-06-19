@@ -292,18 +292,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
-/*.btn { /*modifica y centra el boton de contact*/
-/*    display: block;
-    text-align: center;
-    text-decoration: none;
-    width: 120px;
-    /*background: #DE423A;*/
-/*    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
-    color: white;
-    padding: 10px;
-    margin: 10px auto;
-}*/
-
 .group__title, .group__title-o{
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -331,6 +319,60 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4em;
     color: #DE423A;
     font-weight: bold;
+}
+
+.container--form{
+    width: 100%;
+}
+
+/***************** formulario ********/
+.form-consulta {
+    display: block;
+    margin: auto;
+    max-width: 500px; 
+    background: #eee; 
+    padding: 25px; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+label span {
+    color: #f00;
+}
+
+.campo-form {
+    width:100%; 
+    height:36px; 
+    margin:2px 0 6px; 
+    padding-left:6px; 
+    box-sizing: border-box; 
+    border-radius:3px; 
+    border:0; 
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size:1em;
+}
+
+textarea {
+    resize: none;
+    max-height: 200px!important;
+    min-height: 150px!important;
+}
+
+.btn { /*modifica y centra el boton de contact*/
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    width: 90px;
+    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 25%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    color: rgba(11, 11, 59);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.btn:hover {
+    background: #444;
+    color: white;
 }
 
 /*-------------------estilos footer----------------------------------------*/

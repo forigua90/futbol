@@ -25,10 +25,10 @@
                 </div>
                 <div class="column column--33 posi">
                     <p class="main-header__contactInfo__phone">
-                        <span class="icon-phone1"><a class="infoContact-phone" href="encuentranos.html">TELÉFONOS</a></span>
+                        <span class="icon-phone1"><a class="infoContact-phone" href="encuentranos.html#search-pendon">TELÉFONOS</a></span>
                     </p>
                     <p class="main-header__contactInfo__addres">
-                        <span class="icon-location-1"><a class="infoContact-location" href="encuentranos.html">ENCUENTRANOS</a></span>
+                        <span class="icon-location-1"><a class="infoContact-location" href="encuentranos.html#contact-form">CONTÁCTANOS</a></span>
                     </p>
                 </div>
         </div>
@@ -76,7 +76,7 @@
         <section class="group main__about__description">
             <div class="container container--flex">
             <!-- MAPA 1 !-->
-                <div class="container container--flex container--general">
+                <div class="container container--general">
                    <div class="column--30-q">
                     <div class="column--30-v"></div>
                     <div class="column--30-t">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
             <!-- MAPA 2 !-->
-                 <div class="container container--flex container--general">
+                 <div class="container container--general">
                    <div class="column--30-q">
                     <div class="column--30-n"></div>
                     <div class="column--30-a">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             <!-- MAPA 3 !-->
-		        <div class="container container--flex container--general">
+		        <div class="container container--general">
                     <div class="column--30-q">
                     <div class="column--30-v"></div>
                     <div class="column--30-t">
@@ -121,7 +121,7 @@
                     </div>
                 </div>
             <!-- CONTACTANOS !-->
-            <div class="container container--flex"> 
+            <div class="container container--flex" id="search-pendon"> 
                 <div class="img-en">
                         <h3 class="text__title">ENCUENTRANOS</h3>  
                     </div>
@@ -132,44 +132,24 @@
             </div>
         </section>
         <!-- FORM CONTACTAR !-->
-        <section class="group group--color">
+        <section class="group--color" id="contact-form">
             <div class="container">
                 <h2 class="main__title">CONTÁCTANOS:</h2>   
             </div>
         </section> 
-        <section>
-            <div>
-                <div>
-                   <form action="" method="post" name="formulario">
-                    <div>
-                        <label for="n1">NOMBRE</label>
-                    </div>
-                    <div>
-                    <input type="text" id="n1" name="nombres" required pattern="[A-Za-z]{4,50}" title="Solo Letras. Tamaño minimo de 4 digitos">
-                    </div>
-                    <div>
-                        TELÉFONO
-                    </div>
-                    <div>
-                    <input type="text" name="telefono" required pattern="[0-9]{7,10}" title="Solo Números. Tamaño minimo de 7 digitos">
-                    </div>
-                    <div>
-                        CORREO
-                    </div>
-                    <div>
-                    <input type="email" name="email" required title="Digite de forma correcta el correo">
-                    </div>
-                    <div>
-                        <label for="msj">Déjanos tu mensaje</label>
-                    </div>
-                    <div>
-                    <textarea name="mensaje" id="msj" cols="55" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <button>Enviar</button>
-                    </div>
-                    </form>
-                </div>
+        <section class="main__about__description">
+            <div class="container container--flex">
+                <form action="" method="post" name="formulario" class="form-consulta">
+                    <label for="n1">Nombre: <span>*</span></label>
+                    <input type="text" class="campo-form" id="n1" name="nombres" required pattern="[A-Za-z]{4,50}" title="Solo Letras. Tamaño minimo de 4 digitos">
+                    <label for="tel">Teléfono: <span>*</span></label>
+                    <input type="text" class="campo-form" id="tel" name="telefono" required pattern="[0-9]{7,10}" title="Solo Números. Tamaño minimo de 7 digitos">
+                    <label for="cor">Correo: <span>*</span></label>
+                    <input type="email" class="campo-form" id="cor" name="email" required title="Digite de forma correcta el correo">
+                    <label for="msj">Déjanos tu mensaje: <span>*</span></label>
+                    <textarea name="mensaje" id="msj" class="campo-form"></textarea>
+                        <button class="btn">Enviar</button>
+                </form>
             </div>
         </section>
     </main>

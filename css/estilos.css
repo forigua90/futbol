@@ -881,6 +881,10 @@ textarea {
         width: 35%;
     }
     
+    .column--float {
+        width: 15%
+    }
+    
 }
 
 

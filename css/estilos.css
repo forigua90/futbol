@@ -375,6 +375,27 @@ textarea {
     color: white;
 }
 
+/***************** noticias ********/
+
+.container--noti {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.noti-txt{
+    text-align: center;
+}
+
+.column--float{
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.origin {
+    font-weight: bold;
+}
+
 /*-------------------estilos footer----------------------------------------*/
 
 .main--footer {
@@ -570,6 +591,11 @@ textarea {
     .info-img {
         width: 70%;
     }
+
+    .column--float{
+        width: 40%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width:692px) {
@@ -594,6 +620,20 @@ textarea {
     }
     .info-img {
         width: 55%;
+    }
+    
+    .container--noti {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-style: groove;
+        border-color:rgba(240, 240, 178, 0.3);
+        background: rgba(251, 191, 0, 0.1);
+    }
+    
+    .column--float{
+        float: left;
+        width: 30%;
+        margin: 10px;
     }
 }
 
@@ -663,6 +703,10 @@ textarea {
     
     .info-img {
         width: 50%;
+    }
+    
+    .column--float{
+        width: 25%;
     }
 }
 
@@ -739,6 +783,10 @@ textarea {
     
     .info-img {
         width: 45%;
+    }
+    
+    .column--float{
+        width: 20%;
     }
     
     /*--------club------------*/

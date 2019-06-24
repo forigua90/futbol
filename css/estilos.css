@@ -466,7 +466,7 @@ textarea {
     text-align: justify;
 }
 
-/* Control del iframe (mapas) para que sea responsivo */
+/* Control del iframe (mapas) para responsivo */
 .maps {
     position: relative;
     padding-bottom: 56.25%;
@@ -479,6 +479,21 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.column--30-q {
+    width: 100%;
+    margin-top: 2px;
+    border-style: groove;
+    border-color:azure;
+    
+}
+
+/* control redes */
+
+.text__title img {
+    margin: 0 auto;
+    width: 60px;
 }
 
 /*-------------------estilos responsive----------------------------------------*/
@@ -595,6 +610,12 @@ textarea {
         width: 40%;
         margin: 0 auto;
     }
+
+/* ------------- manejo en contenedor del plugin faceboock ----------*/    
+    .fb-page {
+        margin-left: 20%;
+    }    
+
 }
 
 @media screen and (min-width:692px) {
@@ -634,6 +655,12 @@ textarea {
         width: 30%;
         margin: 10px;
     }
+
+/* ------------- manejo en contenedor del plugin faceboock ----------*/
+    .fb-page {
+        margin-left: 25%;
+    }
+    
 }
 
 @media screen and (min-width:768px) {
@@ -707,6 +734,12 @@ textarea {
     .column--float{
         width: 25%;
     }
+    
+/* ------------- manejo en contenedor del plugin faceboock ----------*/
+    .fb-page {
+        margin-left: 30%;
+    }
+    
 }
 
 @media screen and (min-width:1024px) {
@@ -850,7 +883,8 @@ textarea {
     .column--70-n {
         float: right;
         width: 26%;
-    } 
+    }
+    
 }
 
 @media screen and (min-width:1500px) {

@@ -316,9 +316,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-img {
-    font-size: 1.4em;
+    font-size: 1.1em;
     color: #DE423A;
     font-weight: bold;
+}
+
+.img-description {
+    font-size: 0.9em;
 }
 
 .container--form{

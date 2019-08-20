@@ -18,8 +18,10 @@
 }
 
 .slides li img {
-    width: 100%;
-    max-width: 100%;    
+    width: 100%; 
+    max-width: 100%;/*  para que tome el tamaño real en responsivo sin que la imagen se dañe */
+    /*height: 300px;*/ /* la imagen toma el tamaño indicado  y se centran en el contenedor*/
+    /*object-fit: cover;*/
 }
 
 /* ------------ PAGINACION -----------------------*/
@@ -157,12 +159,9 @@
         border: 5px solid #fcc50e;
     }
     
-    .slides li img {
-        width: 100%;
-        max-width: 100%;
-        /*height: 400px;*/
-    
-    }
+    /*.slides li img {
+        height: 400px;
+    }*/
     
     .flex-control-nav.flex-control-paging {
         background: rgba(8,83,159,.7);
